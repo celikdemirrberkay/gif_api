@@ -1,6 +1,6 @@
 # gif_api
 
-A new Flutter project.
+Learning fetch data from internet and other stuff
 
 ## Getting Started
 
