@@ -3,6 +3,11 @@ import 'package:http/http.dart' as http;
 
 class ApiData{
 
+  static ApiData apiData = ApiData._();
+  ApiData._(){
+
+  }
+
   List<String> _gifUrls = []; // URL listesi
   var entryValue = "";
   var _gifData;
@@ -27,5 +32,11 @@ class ApiData{
   void delayFiveSecond(){
     Future.delayed(Duration(seconds: 5),);
   }
+
+  static ApiData get getApiDataSingle{
+    return apiData;
+  }
+
+
 
 }

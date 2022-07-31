@@ -16,7 +16,7 @@ class GifApi extends StatefulWidget {
 
 class _GifApiState extends State<GifApi> {
 
-  ApiData apiData = ApiData();
+  ApiData apiData = ApiData.getApiDataSingle;
 //-----------------------------------init state---------------------------------------------------------
   @override
   void initState() {

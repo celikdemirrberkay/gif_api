@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gif_api/Singleton.dart';
 import '../API/ApiData.dart';
 import '../Widgets/GifCards.dart';
 
@@ -11,7 +10,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   //Singleton singleton = Singleton.getSingleton;
-  static ApiData apiData = ApiData();
+  ApiData apiData = ApiData.getApiDataSingle;
+  //static ApiData apiData = ApiData();
 
   @override
   Widget build(BuildContext context) {
